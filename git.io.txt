@@ -1,0 +1,27 @@
+Agregando Proyectos
+Archivos Estáticos
+Si tienes proyectos frontend básicos hechos con un conjunto de archivos html, css y js enlazados entre si. Puedes crear un repositorio nuevo siguiendo los pasos de la opción 2 de la sección anterior, luego:
+
+Una vez tus archivos esten en github, ve a la pestaña de Settings dentro de tu repositorio.
+Baja hasta la sección GitHub Pages y activa la opción Source y selecciona master branch.
+Alt Text
+
+Automáticamente se creara un nuevo proyecto en la dirección user.github.io/nombre-del-repositorio. Puedes utilizar estos enlaces en tu portafolio para mostrar tus mejores proyectos.
+
+Websites con React
+Supongamos que tienes un proyecto hecho con React en el cual has estado trabajando largo tiempo, incluso con un repositorio remoto en GitHub y varias ramas (todo un pro).
+
+Agrega el paquete de node gh-pages con npm i -D gh-pages. Este comando instalara el paquete en las dependencias de desarrollo.
+Edita el archivo package.json agregando dos scripts "deploy": "gh-pages -d build" y "predeploy": "npm run build"
+Agrega la propiedad "homepage":"http://user.github.io/nombre-del-repositorio. Reemplazando user por tu usuario de GitHub y el nombre del repositorio remoto del proyecto.
+{
+    "homepage": "http://user.github.io/nombre-del-repositorio",
+    ...
+    "scripts": {
+        "deploy": "gh-pages -d build",
+        "predeploy": "npm run build"
+    }
+}
+Agrega los ultimos cambios haciendo commit y push del proyecto.
+Corre el comando npm run deploy para hacer el despliegue del proyecto y publicarlo en la hompage especificada.
+Listo! En cinco minutos deberías de poder navegar a la url de homepage y ver tu proyecto de React desplegado!
