@@ -1,0 +1,78 @@
+export default {
+  colors: {
+    purple: "#8884d8",
+    lightText: "#828282",
+    white: "#fff",
+    spiderChart: [
+      "#8884d8",
+      "#E65100",
+      "#8D6E63",
+      "#FF3D00",
+      "#FF80AB",
+      "#880E4F",
+      "#EF9A9A",
+      "#B388FF",
+      "#9FA8DA",
+      "#1976D2",
+      "#0097A7",
+      "#80CBC4",
+      "#64DD17",
+      "#CF0E0A",
+      "#795548",
+      "#9E9E9E",
+      "#B0BEC5",
+      "#FF8F00",
+      "#FFD600",
+      "#C0CA33",
+      "#CCFF90",
+      "#004D40",
+      "#AED581",
+      "#4CAF50",
+      "#E57373",
+      "#0097A7",
+      "#E040FB",
+      "#C51162",
+      "#FF1744",
+      "#19E2D6",
+      "#2930FF",
+      "#8D29FF",
+    ],
+  },
+  opacity: {
+    main: 0.6,
+    fillOpacity: 0.15,
+  },
+  labels: {
+    standar: 12,
+  },
+  rangeDomain: {
+    main: [0, 100],
+  },
+  angles: {
+    ninety: 90,
+  },
+  margin: {
+    standar: {
+      top: 50,
+      right: 50,
+      left: 50,
+      bottom: 50,
+    },
+    mobile: {
+      top: 50,
+      right: 0,
+      left: 0,
+      bottom: 15,
+    },
+  },
+  boxShadow: {
+    standar: "0px 4px 15px 0px #00000026",
+  },
+  sizeIcon: {
+    standar: "24",
+    medium: "32",
+  },
+  breakpoints: {
+    small: "sm",
+  },
+};

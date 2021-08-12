@@ -1,0 +1,59 @@
+{
+  "sidebar": {
+    "subMenu-home": "Inicio",
+    "subMenu-engagement": "Clima",
+    "subMenu-collaborators": "Colaboradores",
+    "subMenu-hrAnalitycs": "HR Analytics",
+    "subMenu-performance-review": "Desempeño",
+    "subMenu-organization-chart": "Organigrama",
+    "subMenu-onboarding": "Onboarding",
+    "subMenu-candidates": "Candidatos",
+    "subMenu-settings": "Configuración",
+    "subMenu-potential": "Potencial",
+    "subMenu-bulk-upload": "Subir carga masiva",
+    "subMenu-goals": "Metas",
+    "subMenu-administration": "Administrador general",
+    "subMenu-planning": "Planificación",
+    "subMenu-time-off": "Tiempo libre"
+  },
+  "months": {
+    "January": "Enero",
+    "February": "Febrero",
+    "March": "Marzo",
+    "April": "Abril",
+    "May": "Mayo",
+    "June": "Junio",
+    "July": "Julio",
+    "August": "Agosto",
+    "September": "Septiembre",
+    "October": "Octubre",
+    "November": "Noviembre",
+    "December": "Diciembre"
+  },
+  "week_days": {
+    "monday": "Lunes",
+    "tuesday": "Martes",
+    "wednesday": "Miércoles",
+    "thursday": "Jueves",
+    "friday": "Viernes",
+    "saturday": "Sábado",
+    "sunday": "Domingo"
+  },
+  "error": {
+    "title": "Algo ocurrió",
+    "400": "400 - Solicitud incorrecta",
+    "400-idTaken": "400 - Solicitud incorrecta - El ID ya pertenece a otro colaborador",
+    "401": "401 - No autorizado",
+    "403": "403 - Prohibido",
+    "404": "404 - No encontrado",
+    "405": "405 - Método no permitido",
+    "408": "408 - Solicitud expiró",
+    "500": "500 - Error interno del servidor",
+    "502": "502 - Puerta de enlace incorrecta",
+    "503": "503 - Servicio no dispobible",
+    "504": "504 - Tiempo de espera de la puerta de enlace expiró",
+    "unauthenticated": "Tu correo no esta asociado a ninguna compañía",
+    "wrong_signin_data": "Contraseña o email incorrectos.",
+    "contact_administrator": "Please, contact the platform administrator"
+  }
+}

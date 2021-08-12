@@ -1,13 +1,66 @@
-body {
+/* DEFAULT PROPS */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+::before, ::after{
+  box-sizing: border-box;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Cagliostro&display=swap');
+
+/* COLORS */
+/* PALETE 1 */
+:root{
+  --first-color: rgb(34, 40, 49);
+  --second-color: rgb(57, 62, 70);
+  --third-color: rgb(255, 211, 105);
+  --fourth-color: rgb(238, 238, 238);
+}
+/* PALETE 2 */
+:root {
+  --first-color: rgb(41, 59, 95);
+  --second-color: rgb(71, 89, 126);
+  --third-color: rgb(219, 230, 253);
+  --fourth-color: rgb(178, 171, 140);
+}
+
+/* FONT */
+:root{
+  --body-font: 'Cagliostro', sans-serif;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.938rem;
+}
+@media screen and (min-width: 768px){
+  :root{
+    --big-font-size: 3.5rem;
+    --h2-font-size: 2rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+/* MARGINS */
+:root{
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
 }
