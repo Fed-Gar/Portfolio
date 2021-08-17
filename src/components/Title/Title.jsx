@@ -1,8 +1,12 @@
 import React from 'react';
 
-import { Zoom } from '@material-ui/core';
+// import { Zoom } from '@material-ui/core';
 import { Transition } from 'react-transition-group';
-import { Grid, Typography } from '@material-ui/core';
+import { 
+  Box, 
+  Grid, 
+  Typography,
+ } from '@material-ui/core';
 
 import { useStyles } from './styles';
 
@@ -10,7 +14,7 @@ export default function Title() {
   const classes = useStyles();
 
   return (
-    <>
+    <Box>
       <Grid className={ classes.root }>
         <Transition in={false} timeout={500}>
           <Typography variant='h5' className={ [classes.h5, classes.first] }>
@@ -27,7 +31,7 @@ export default function Title() {
           Full-Stack Developer
         </Typography>
       </Grid>
-    </>
+    </Box>
   );
 };
 
