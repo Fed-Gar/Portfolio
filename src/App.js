@@ -8,6 +8,7 @@ import NavBar from './components/NavBar/NavBar';
 import Title from './components/Title/Title';
 import Presentation from './components/Presentation/Presentation';
 import Skills from './components/Skills/Skills';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Title /> 
       <Presentation /> 
       <Skills /> 
+      <Footer /> 
     </ThemeProvider>
   );
 };
