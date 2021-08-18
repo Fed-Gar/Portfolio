@@ -14,5 +14,9 @@ export const useStyles = makeStyles((theme) => ({
   link: {
     color: theme.palette.text.primary,
   },
+  menu: {
+    position: 'absolute',
+    right: 15,
+  },
   offfset: theme.mixins.toolbar,
 }));

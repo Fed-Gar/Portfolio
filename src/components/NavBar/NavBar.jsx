@@ -1,39 +1,21 @@
 import React from 'react';
 
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Link from '@material-ui/core/Link';
+import LongMenu from './components/LongMenu/LongMenu';
 
-import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
-import ComputerOutlinedIcon from '@material-ui/icons/ComputerOutlined';
-import MailIcon from '@material-ui/icons/Mail';
-import WorkIcon from '@material-ui/icons/Work';
+import {
+  AppBar,
+  Toolbar,
+  Link,
+} from '@material-ui/core';
+
+import { list } from './data';
 
 import { useStyles } from './styles';
 
-const list = [
-    {
-			title: 'Quién soy?',
-			icon: <AssignmentIndIcon />,
-    },
-    {
-			title: 'Skills',
-			icon: <ComputerOutlinedIcon />,
-		},
-    {
-			title: 'Trabajos',
-			icon: <WorkIcon />,
-		},
-    {
-			title: 'Contacto',
-			icon: <MailIcon />,
-		},
-];
-
 export default function NavBar() {
   const classes = useStyles();
-
-  const preventDefault = (event) => event.preventDefault();
+  
+  const preventDefault = event => event.preventDefault();
   
   return (
     <>
@@ -54,6 +36,9 @@ export default function NavBar() {
             })
           }
         </Toolbar>
+        <div className={ classes.menu }>
+          <LongMenu/>
+        </div>
       </AppBar>
       <div className={ classes.offset }></div>
     </>
