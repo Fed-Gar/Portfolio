@@ -13,6 +13,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   link: {
     color: theme.palette.text.dark,
+    fontSize: '2rem',
     cursor: 'pointer',
     '&:hover' : {
       color: theme.palette.text.linkHover,

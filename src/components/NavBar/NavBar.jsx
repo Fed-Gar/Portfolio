@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { Link } from "react-scroll";
-
-import LongMenu from './components/LongMenu/LongMenu';
-import BackToTop from './components/BackToTop/BackToTop';
-
 import {
   AppBar,
   Toolbar,
 } from '@material-ui/core';
+
+import { Link } from "react-scroll";
+
+import LongMenu from './components/LongMenu/LongMenu';
+import BackToTop from './components/BackToTop/BackToTop';
 
 import { list } from './data';
 
@@ -51,7 +51,3 @@ export default function NavBar() {
     </>
   );
 };
-
-// scrollToTop = () => {
-//   scroll.scrollToTop();
-// };
