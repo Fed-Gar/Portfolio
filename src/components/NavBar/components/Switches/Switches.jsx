@@ -8,9 +8,12 @@ import {
 import Brightness6Icon from '@material-ui/icons/Brightness6'; 
 import Brightness3Icon from '@material-ui/icons/Brightness3'; 
 
+import { useStyles } from './styles';
 import { AntSwitch } from './styles';
 
 export default function Switches() {
+  const classes = useStyles();
+  
   const [state, setState] = useState({
     checked: false,
   });
@@ -21,12 +24,12 @@ export default function Switches() {
 
   return (
     <Typography component="div">
-      <Grid component="label" container alignItems="center" spacing={1}>
-        <Grid item> <Brightness3Icon /> </Grid>
-        <Grid item>
+      <Grid component="label" className={ classes.root }>
+        <Grid> <Brightness3Icon/> </Grid>
+        <Grid>
           <AntSwitch checked={ state.checked } onChange={ handleChange } name="checked" />
         </Grid>
-        <Grid item> <Brightness6Icon /> </Grid>
+        <Grid> <Brightness6Icon/> </Grid>
       </Grid>
     </Typography>
   );

@@ -7,9 +7,12 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 
+import { useStyles } from './styles';
+
 const ITEM_HEIGHT = 20;
 
 export default function LongMenu() {
+  const classes = useStyles();
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
 
@@ -29,7 +32,7 @@ export default function LongMenu() {
         aria-haspopup="true"
         onClick={ handleClick }
       >
-        <MoreVertIcon/>
+        <MoreVertIcon className={ classes.icon }/>
       </IconButton>
       <Menu
         id="long-menu"
@@ -40,7 +43,8 @@ export default function LongMenu() {
         PaperProps={{
           style: {
             maxHeight: ITEM_HEIGHT * 4.5,
-            width: '25ch',
+            width: '20ch',
+            backgroundColor: 'rgb(34, 40, 49)',
           },
         }}
       >

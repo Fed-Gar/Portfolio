@@ -1,6 +1,16 @@
 import { Switch } from '@material-ui/core';
 
+import { makeStyles } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
+
+export const useStyles = makeStyles((theme) => ({
+  root: {
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+}));
 
 export const AntSwitch = withStyles((theme) => ({
   root: {
@@ -8,6 +18,10 @@ export const AntSwitch = withStyles((theme) => ({
     height: 16,
     padding: 0,
     display: 'flex',
+    position: 'relative',
+    bottom: 3,
+    marginLeft: 4,
+    marginRight: 5,
   },
   switchBase: {
     padding: 2,
