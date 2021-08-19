@@ -11,7 +11,8 @@ export const useStyles = makeStyles((theme) => ({
 		backgroundColor: theme.palette.background.cream,
   },
   text: {
-		fontSize: 15,
+		fontSize: 18,
+		fontWeight: 'bold',
 		color: theme.palette.text.dark,
   },
 }));
