@@ -13,29 +13,28 @@ export const useStyles = makeStyles((theme) => ({
     borderRadius: 4,
     backgroundColor: theme.palette.background.default,
     '& ::-webkit-scrollbar': {
-      width: 15,
-      height: 15, 
-      background: theme.palette.background.empty,
+      width: 12,
+      height: 12, 
     },
     '& ::-webkit-scrollbar-thumb': {
-      background: 'rgb(238, 238, 238)',
+      background: theme.palette.background.primary,
       borderRadius: 4,
     },
     '& ::-webkit-scrollbar-thumb:hover': {
-      background: theme.palette.text.primary,
+      background: theme.palette.background.cream,
     },
     '& ::-webkit-scrollbar-thumb:active': {
-      backgroundColor: 'rgb(96, 103, 114)',
+      background: theme.palette.background.cream,
     },
     '& ::-webkit-scrollbar-track': {
-      background: theme.palette.background.empty,
+      background: 'transparent',
       borderRadius: 4,
     },
     '& ::-webkit-scrollbar-track:hover': {
-      background: theme.palette.background.empty,
+      background: 'transparent',
     },
     '& ::-webkit-scrollbar-track:active': {
-      background: '#d4d4d4',
+      background: 'transparent',
     },
   },
   imageList: {
