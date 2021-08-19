@@ -7,5 +7,5 @@ export const useStyles = makeStyles((theme) => ({
 	title: {
     marginLeft: '4rem',
 		marginBottom: '1rem',
-  },
+  	},
 }));

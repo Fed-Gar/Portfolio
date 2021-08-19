@@ -14,7 +14,7 @@ export default function Skills() {
   const classes = useStyles();
 
   return (
-    <Box> 
+    <Box id='skills'> 
       <Grid className={  classes.root }>
         <Typography variant='h3' className={ classes.title }>
           Skills
