@@ -1,11 +1,13 @@
 import React from 'react';
 
+import { Link } from "react-scroll";
+
 import LongMenu from './components/LongMenu/LongMenu';
+import BackToTop from './components/BackToTop/BackToTop';
 
 import {
   AppBar,
   Toolbar,
-  Link,
 } from '@material-ui/core';
 
 import { list } from './data';
@@ -27,8 +29,13 @@ export default function NavBar() {
                 <Link 
                   key={ item.title } 
                   className={ classes.link }
-                  href="#" 
                   onClick={ preventDefault }
+                  activeClass="active"
+                  to={ item.title.toLowerCase() }
+                  spy={ true }
+                  smooth={ true }
+                  offset={ -70 }
+                  duration={ 700 }
                 >
                   { item.icon }
                 </Link>
@@ -40,7 +47,11 @@ export default function NavBar() {
           <LongMenu/>
         </div>
       </AppBar>
-      <div className={ classes.offset }></div>
+      <BackToTop/>
     </>
   );
 };
+
+// scrollToTop = () => {
+//   scroll.scrollToTop();
+// };

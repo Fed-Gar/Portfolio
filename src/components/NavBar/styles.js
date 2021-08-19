@@ -5,18 +5,21 @@ export const useStyles = makeStyles((theme) => ({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: theme.palette.background.cream,
   },
   toolBar: {
     width: '50%',
     justifyContent: 'space-between',
   },
   link: {
-    color: theme.palette.text.primary,
+    color: theme.palette.text.dark,
+    cursor: 'pointer',
+    '&:hover' : {
+      color: theme.palette.text.linkHover,
+    },
   },
   menu: {
     position: 'absolute',
     right: 15,
   },
-  offfset: theme.mixins.toolbar,
 }));
