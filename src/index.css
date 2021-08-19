@@ -1,68 +1,46 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Cagliostro&display=swap');
 
-/* COLORS */
-/* PALETE 1 */
 :root {
+  /* COLORS */
+  /* PALETE 1 */
   --first-color: rgb(34, 40, 49);
   --second-color: rgb(57, 62, 70);
   --third-color: rgb(255, 211, 105);
   --fourth-color: rgb(238, 238, 238);
-}
-/* PALETE 2 */
-/* :root {
-  --first-color: rgb(41, 59, 95);
-  --second-color: rgb(71, 89, 126);
-  --third-color: rgb(219, 230, 253);
-  --fourth-color: rgb(178, 171, 140);
-} */
-
-/* FONT */
-:root {
-  --body-font: 'Cagliostro', sans-serif;
-  --big-font-size: 2rem;
-  --h2-font-size: 1.25rem;
-  --normal-font-size: 0.938rem;
-}
-
-/* MARGINS */
-:root {
-  --mb-1: 0.5rem;
-  --mb-2: 1rem;
-  --mb-3: 1.5rem;
-  --mb-4: 2rem;
-  --mb-5: 2.5rem;
-  --mb-6: 3rem;
-  --mb-7: 4rem;
+  /* PALETE 2 */
+  --first-color2: rgb(41, 59, 95);
+  --second-color2: rgb(71, 89, 126);
+  --third-color2: rgb(219, 230, 253);
+  --fourth-color2: rgb(178, 171, 140);
 }
 
 body::-webkit-scrollbar {
-  width: 12px;
-  height: 12px; 
-  background: #9C9C9C,
+  width: 9px;
+  height: 9px; 
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #d4d4d4;
+  background: var(--third-color2);
   border-radius: 4px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background: rgb(96, 103, 114);
+  background: var(--third-color);
 }
 
 body::-webkit-scrollbar-thumb:active {
-  background: rgb(96, 103, 114);
+  background: var(--third-color);
 }
 
 body::-webkit-scrollbar-track {
-  background: #9C9C9C;
+  background: transparent;
 }
 
 body::-webkit-scrollbar-track:hover {
-  background: #9C9C9C;
+  background: transparent;
 }
 
 body::-webkit-scrollbar-track:active {
-  background: #d4d4d4;
+  background: transparent;
 }
