@@ -44,7 +44,7 @@ export default function NavBar() {
           }
         </Toolbar>
         <div className={ classes.menu }>
-          <LongMenu/>
+          {/* <LongMenu/> */}
         </div>
       </AppBar>
       <BackToTop/>
