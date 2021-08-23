@@ -17,4 +17,7 @@ export default {
     lightBrown: 'rgb(178, 171, 140)',
     darkGrey: "#707070",
   },
+  shadow: {
+    default: '-5px 5px 10px 5px rgba(0,0,0,0.5)',
+  },
 };
