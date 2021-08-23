@@ -14,6 +14,7 @@ export const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     borderRadius: 10,
     backgroundColor: theme.palette.background.cream,
+    boxShadow: theme.palette.shadow.default,
   },
   title: {
     position: 'absolute',
