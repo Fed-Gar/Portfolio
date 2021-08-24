@@ -6,7 +6,6 @@ export const useStyles = makeStyles((theme) => ({
 		display: 'flex',
 		flexDirection: 'column',
 		justifyContent: 'center',
-		marginTop: 64,
 	},
 	first: {
 		marginLeft: '4rem',

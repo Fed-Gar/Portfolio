@@ -1,7 +1,5 @@
 import React from 'react';
 
-// import { Zoom } from '@material-ui/core';
-import { Transition } from 'react-transition-group';
 import { 
   Box, 
   Grid, 
@@ -16,11 +14,9 @@ export default function Title() {
   return (
     <Box>
       <Grid className={ classes.root }>
-        <Transition in={false} timeout={500}>
-          <Typography variant='h5' className={ [classes.h5, classes.first] }>
-            Hola! Me llamo
-          </Typography>
-        </Transition>
+        <Typography variant='h5' className={ [classes.h5, classes.first] }>
+          Hola! Me llamo
+        </Typography>
         <Typography variant='h2' className={ [classes.h2, classes.second] }>
           Federico García
         </Typography>
@@ -34,8 +30,3 @@ export default function Title() {
     </Box>
   );
 };
-
-      // <Zoom in={checked}>
-        
-      // <Zoom in={checked} style={{ transitionDelay: checked ? '500ms' : '0ms' }}>
-       
